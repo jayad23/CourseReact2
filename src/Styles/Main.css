@@ -104,3 +104,11 @@ h1{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+@media screen and (max-width: 640px) {
+    .sub-container{
+        flex-direction: column;
+    }
+    .container-list > .sub-container > .container-button{
+        width: 100%;
+    }
+  }
