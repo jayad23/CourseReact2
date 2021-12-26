@@ -1,0 +1,40 @@
+.container-quote{
+    width: 20.5rem;
+    height: 17rem;
+    margin: 0 auto;
+    background-color: #000;
+    padding: 1rem;
+    margin-top: 15rem;
+    border-radius: 0 2rem;
+}
+
+.quote{
+    width: 100%;
+}
+
+.quote > h3{
+    height: 10.7rem;
+}
+
+.quote > .container-details{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    height: 2rem;
+}
+
+.quote > .container-details > p{
+    margin-bottom: 5px;
+}
+
+.quote > .container-details > button {
+    border: none;
+    background: none;
+
+}
+
+.quote > .container-details > button > i{
+    font-size: 1.7rem;
+}
+

@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;  
+}
+
+h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+}
+
+.main-container{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.main-container > h1, h2{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+}
+
+.main-container > h4{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1rem;
+}
+
+.container-list{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-list > .sub-container{
+    display: flex;
+}
+
+.container-list > .sub-container > .sub-in{
+    
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-list > .sub-container > .container-button{
+    width: 20%;
+    height: 100px;
+}
+
+.container-button >button{
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #1e065f;
+    color: #d1cace;
+    transition: .3s ease all;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgb(18, 149, 158);
+}
+
+.container-button >button>span{
+    position: relative;
+    z-index: 2;
+    height: 150px;
+    transition: .3s ease all;
+}
+
+.container-button >button::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: calc(-100% - 100px);
+    transition: .4s ease-in-out;
+    z-index: 1;
+    border-top: 50px solid rgb(18, 149, 158);
+    border-bottom: 50px solid rgb(18, 149, 158);
+    border-right: 50px solid transparent;
+    margin-top: -34px;
+}
+
+.container-button >button:hover::after{
+    left:0;
+    color: rgb(20, 20, 75);
+}
+
+.container-button >button:hover{
+    color: rgb(20, 20, 75);
+    transition: .2s ease-in-out;
+    font-weight: bolder;
+}
+
+.sub-container > .sub-in {
+    padding: 0.4rem;
+}
+
+.sub-container > .sub-in > span, p{
+    margin: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+

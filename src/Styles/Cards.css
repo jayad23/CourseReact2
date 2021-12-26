@@ -1,0 +1,50 @@
+.container-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    width: 100%;
+    
+}
+
+.container-cards > a{
+    padding: 1rem;
+    background-color: black;
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    color: rgba(105, 104, 97, 0.993);
+    border-radius: 0.4rem;
+}
+
+.container-cards > a:hover {
+    background-color: rgba(105, 104, 97, 0.726);
+    color: black;
+}
+
+.subcontainer-cards{
+    display: flex;
+    padding-top: 2rem;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.subcontainer-cards > div, ul{
+    width: 19rem;
+    height: 10rem;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 0.7rem;
+}
+
+.subcontainer-cards > ul > li {
+    margin: 0.4rem;
+}
+
+.subcontainer-cards > ul > span{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 0.3rem;
+}

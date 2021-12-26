@@ -1,10 +1,13 @@
 import React from 'react'
 
-const FreeTimeCard = () => {
+const FreeTimeCard = ({ free1, free2, free3 }) => {
     return (
-        <div>
-            
-        </div>
+        <ul style={{background: "#F14A16", color: "#fff"}}>
+            <span><b>Fav. Activities</b></span>
+            <li>{free1}</li>
+            <li>{free2}</li>
+            <li>{free3}</li>
+        </ul>
     )
 }
 
